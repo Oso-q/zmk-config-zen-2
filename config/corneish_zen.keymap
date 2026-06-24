@@ -76,16 +76,6 @@ combo_esc {
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
-        combo_lbkt {
-            timeout-ms = <60>;
-            key-positions = <7 8>;
-            bindings = <&kp LBKT>;
-        };
-        combo_rbkt {
-            timeout-ms = <60>;
-            key-positions = <7 8>;
-            bindings = <&kp RBKT>;
-        };
         combo_minus {
             timeout-ms = <60>;
             key-positions = <2 3>;
@@ -122,8 +112,8 @@ combo_esc {
                 default_layer {
                         
                         bindings = <
-&trans &lt MED Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &lt FUN P           &trans    
-&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F         &lt NAV G              &lt NUM H              &hm LSHFT J        &hm LALT K         &hm LCTRL L        &hm LGUI SQT   &trans     
+&trans &lt MED Q              &lt 4 W              &lt 3 E              &lt 6 R              &kp T              &kp Y              &lt 5 U              &lt 3 I              &lt 2 O              &lt FUN P           &trans    
+&trans &hm LGUI A         &hm LALT S        &hm LCTRL D         &hm LSHFT F         &lt NAV G              &lt NUM H              &hm RSHFT J        &hm RCTRL  K         &hm RALT L        &hm RGUI SQT   &trans     
 &trans &lt HAND Z         &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH   &trans 
                                              &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPACE        &lt SYM F2
                         >;
@@ -133,7 +123,7 @@ combo_esc {
                         bindings = <
 &trans &kp LPAR           &msc SCRL_LEFT        &msc SCRL_DOWN          &msc SCRL_UP          &msc SCRL_RIGHT          &kp ESC             &kp TAB           &mmv MOVE_UP            &kp BSPC          &kp DEL      &trans 
 &trans &kp SEMI           &kp LEFT       &mkp LCLK        &mkp RCLK       &mkp MCLK          &kp PG_DN            &mmv MOVE_LEFT            &mmv MOVE_DOWN        &mmv MOVE_RIGHT          &kp ENTER      &trans        
-&trans &kp GRAVE          &kp F2         &mkp MB4         &mkp MB5        &kp DEL            &mt LCTRL Y              &mt LCTRL V            &mt LCTRL C           &mt LCTRL X           &mt LCTRL Z         &trans         
+&trans &kp GRAVE          &kp F2         &mkp MB4         &mkp MB5        &kp CAPS            &mt LCTRL Y              &mt LCTRL V            &mt LCTRL C           &mt LCTRL X           &mt LCTRL Z         &trans         
                                             &kp MINUS     &kp RETURN      &kp DOT               &trans                &kp RETURN            &trans  
                         >;
                 };
@@ -143,9 +133,9 @@ combo_esc {
                 num_layer {
                        
                         bindings = <
-&trans &kp LPAR           &kp N7          &kp N8          &kp N9          &kp RPAR           &kp LBKT              &kp RBKT           &kp LBRC           &kp RBRC           &kp PIPE      &trans 
+&trans &kp LPAR           &kp N7          &kp N8          &kp N9          &kp RPAR           &kp LBKT              &kp PG_DN           &kp PG_UP           &kp PG_DN           &kp PIPE      &trans 
 &trans &kp SEMI           &kp N4          &kp N5          &kp N6          &kp EQUAL          &kp BSLH              &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans        
-&trans &kp GRAVE          &kp N1          &kp N2          &kp N3          &kp MINUS          &kp LBKT              &kp RBKT           &trans             &trans             &trans        &trans         
+&trans &kp GRAVE          &kp N1          &kp N2          &kp N3          &kp MINUS          &kp PSCRN              &kp HOME           &kp END             &kp PAUSE_BREAK             &kp K_APP        &trans         
                                             &kp MINUS     &kp N0      &kp DOT               &trans                &trans             &trans  
                         >;
                 };
