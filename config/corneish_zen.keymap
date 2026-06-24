@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
@@ -118,7 +118,7 @@ combo_esc {
 &trans &lt MED Q              &lt 4 W              &lt 3 E              &lt 6 R              &kp T              &kp Y              &lt 5 U              &lt 3 I              &lt 2 O              &lt FUN P           &trans    
 &trans &hm LGUI A         &hm LALT S        &hm LCTRL D         &hm LSHFT F         &lt NAV G              &lt NUM H              &hm RSHFT J        &hm RCTRL  K         &hm RALT L        &hm RGUI SQT   &trans     
 &trans &lt HAND Z         &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH   &trans 
-                                             &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPACE        &lt SYM F2
+                                             &studio_unlock             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPACE        &lt SYM F2
                         >;
                 };
                                 hand_layer {
