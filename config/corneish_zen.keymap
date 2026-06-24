@@ -96,21 +96,6 @@ combo_esc {
             bindings = <&kp EQUAL>;
         };
 
-        combo_less_than {
-            timeout-ms = <60>;
-            key-positions = <31 32>;
-            bindings = <&kp LT>;
-        };
-        combo_greater_than {
-            timeout-ms = <60>;
-            key-positions = <32 33>;
-            bindings = <&kp GT>;
-        };
-        combo_pipe {
-            timeout-ms = <60>;
-            key-positions = <33 34>;
-            bindings = <&kp PIPE>;
-        };
     };
 };
 
@@ -130,9 +115,9 @@ combo_esc {
                                 hand_layer {
                        
                         bindings = <
-&trans &kp LPAR           &msc SCRL_LEFT        &msc SCRL_DOWN          &msc SCRL_UP          &msc SCRL_RIGHT          &kp ESC             &kp TAB           &mmv MOVE_UP            &kp BSPC          &kp DEL      &trans 
-&trans &kp SEMI           &kp LEFT       &mkp LCLK        &mkp RCLK       &mkp MCLK          &kp PG_DN            &mmv MOVE_LEFT            &mmv MOVE_DOWN        &mmv MOVE_RIGHT          &kp ENTER      &trans        
-&trans &kp GRAVE          &kp F2         &mkp MB4         &mkp MB5        &kp DEL            &mt LCTRL Y              &mt LCTRL V            &mt LCTRL C           &mt LCTRL X           &mt LCTRL Z         &trans         
+&trans &kp LPAR           &kp ESC        &kp UP          &kp N9          &kp PG_UP          &kp PG_UP             &kp RBKT           &kp UP            &kp ESC          &kp PIPE      &trans 
+&trans &kp SEMI           &kp LEFT       &kp DOWN        &kp RIGHT       &kp PG_DN          &kp PG_DN            &kp LEFT            &kp DOWN        &kp RIGHT          &kp LGUI      &trans        
+&trans &kp GRAVE          &kp F2         &kp TAB         &kp BSPC        &kp DEL            &kp DEL              &kp BSPC            &kp TAB           &kp F2           &trans         &trans         
                                             &kp MINUS     &kp RETURN      &kp DOT               &trans                &kp RETURN            &trans  
                         >;
                 };
@@ -152,18 +137,18 @@ combo_esc {
                 sym_layer {
                         
                         bindings = <
-&trans &kp GRAVE           &kp PIPE           &kp FSLH          &kp HASH           &kp CARET           &kp AMPS                &kp SQT             &kp RBKT             &kp LBKT             &kp STAR       &trans   
-&trans &kp EXCL          &kp AT           &kp HASH           &kp DLLR           &kp PRCNT           &kp MINUS                &kp EQUAL          &kp RPAR           &kp LPAR          &kp SEMI      &trans      
-&trans &kp TILDE          &kp DQT           &kp LT             &kp GT           &sk LSHFT           &kp UNDER                &kp PLUS             &kp RBRC             &kp LBRC             &kp COLON       &trans   
+&trans &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC           &trans                &trans             &trans             &trans             &trans       &trans   
+&trans &kp COLON          &kp DLLR           &kp PRCNT           &kp CARET           &kp PLUS           &trans                &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans      
+&trans &kp TILDE          &kp EXCL           &kp AT             &kp HASH           &kp PIPE           &trans                &trans             &trans             &trans             &trans       &trans   
                                       &kp LPAR           &kp RPAR           &kp UNDER          &trans                &trans             &trans                                          
                         >;
                 };
                 nav_layer {
                       
                         bindings = <
-&trans &kp ESC            &kp TAB            &kp LS(TAB)           &kp F2            &kp PG_UP               &kp ESC        &kp TAB          &kp UP             &kp BSPC            &kp DEL     &trans       
-&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F        &kp PG_DN                &kp SEMI          &kp LEFT           &kp DOWN           &kp RIGHT          &kp RETURN   &trans       
-&trans &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &trans                &trans        &kp LC(V)          &kp LC(C)          &kp LC(X)          &kp LC(Z)    &trans            
+&trans &kp ESC            &kp TAB            &kp HOME           &kp END            &kp INS               &kp PG_DN        &kp PG_UP          &kp UP             &kp DEL            &kp BSPC     &trans       
+&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F        &trans                &kp PG_UP          &kp LEFT           &kp DOWN           &kp RIGHT          &kp RETURN   &trans       
+&trans &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &trans                &kp PG_DN        &kp LC(V)          &kp LC(C)          &kp LC(X)          &kp LC(Z)    &trans            
                                       &trans             &trans             &trans                &kp RET            &kp BSPC           &kp DEL
                         >;
                 };        
